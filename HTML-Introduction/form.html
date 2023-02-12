@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Resgistration Form</h3>
+    <form action="#" method="post" style="border: 1px solid hotpink; padding: 25px; width: 50%;">
+        <label for="name">Name &nbsp;</label> <input type="text" placeholder="Enter your Name" name="fullname" id="fname"><br><br>
+        
+        <label for="name">Password &nbsp;</label> <input type="password" placeholder="Enter your Password" name="password" id="psw"><br><br>
+        
+        <label for="name">Gender</label> 
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">female</label><br><br>
+        
+            <label for="DoB">Date of Birth  &nbsp; &nbsp;</label> <input type="date" name="DoB" id="DoB"><br><br>
+        
+            <label for="status">Highest Degree &nbsp; &nbsp;</label> 
+                <select name="degree" id="degree" size="2">
+                    <option value="JSC">JSC</option>
+                    <option value="SSC">SSC</option>
+                    <option value="HSC">HSC</option>
+                    <option value="Hons">Hons</option>
+                    <option value="Master">Master</option>
+                </select><br><br>
+
+        <label for="hobby">Hobby</label> &nbsp; &nbsp;
+            <label for="football">Football</label><input type="checkbox" name="hobby" id="football">
+            <label for="football">Cricket</label><input type="checkbox" name="hobby" id="Cricket">
+            <label for="football">Video Games</label><input type="checkbox" name="hobby" id="vg"><br><br>
+
+        <textarea name="msg" id="msg" cols="30" rows="10">Enter your feedback</textarea><br>
+        <button type="submit">Submit</button> <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
