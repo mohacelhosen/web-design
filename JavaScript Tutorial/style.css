@@ -1,0 +1,129 @@
+/* body{
+    margin: 0 auto;
+    background-image: linear-gradient(70deg,rgba(0, 255, 255,0.65), rgba(255, 105, 180,0.35)), url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+} */
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding:15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.navbar ul li a::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background-color: greenyellow;
+    margin-bottom: -2px;
+    transition: all 0.25s  ease-in-out;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 13px;
+    margin-top: 50px;
+}
+.content h3{
+    font-size: 20px;
+    color: greenyellow;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+.content p{
+    font-weight: 100;
+    margin-top: 5px;
+    padding: 0 80px;
+}
+.nab-btn{
+    margin-top: 25px;
+}
+.banner-btn{
+    width: 100px;
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid greenyellow;
+    background:transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.content span{
+    width: 0;
+    height: 100%;
+    background: greenyellow;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.banner-btn:hover span{
+    width: 100%;
+}
+
+
+/* ============== content Area ============== */
+.content-area{
+    height: 350px;
+    width: 100%;
+    background-image: linear-gradient(180deg,cyan, hotpink);
+}
+.contact-area{
+    height: 350px;
+    width: 100%;
+    background-image: linear-gradient(90deg,rgb(162, 0, 255), rgb(105, 140, 255));
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: dodgerblue;
+}
